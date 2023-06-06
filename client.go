@@ -6,6 +6,7 @@ import (
 )
 
 type IUserClient interface {
+	GetUsers(l int, s int) (http.Response, error)
 }
 
 type userClient struct {
