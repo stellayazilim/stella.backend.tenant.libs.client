@@ -13,7 +13,7 @@ type userClient struct {
 }
 
 func UserClient(i string) IUserClient {
-	return userClient{
+	return &userClient{
 		TenantId: i,
 	}
 }
